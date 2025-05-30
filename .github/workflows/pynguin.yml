@@ -31,6 +31,6 @@ jobs:
       - name: Pynguin test
         run: |
           export PYNGUIN_DANGER_AWARE=x
-          pynguin --project-path . --output-path pynguin-action --module-name lift -v
-          cd test_lift.py pynguin-action/
-          pytest test_lift.py
+          pynguin --project-path . --output-path pynguin-action --module-name car -v
+          cd car.py pynguin-action/
+          pytest pynguin-action/test_car.py
