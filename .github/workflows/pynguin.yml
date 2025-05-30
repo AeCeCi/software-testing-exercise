@@ -32,5 +32,5 @@ jobs:
         run: |
           export PYNGUIN_DANGER_AWARE=x
           pynguin --project-path . --output-path pynguin-action --module-name car -v
-          cd car.py pynguin-action/
+          cp car.py pynguin-action/
           pytest pynguin-action/test_car.py
